@@ -2,3 +2,4 @@ pytest~=7.1.2
 twaddle >= 0.9
 matplotlib >= 3.5
 pre-commit
+Pillow~=9.2.0
