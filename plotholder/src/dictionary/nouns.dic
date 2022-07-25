@@ -1,0 +1,11 @@
+#name noun
+#forms singular plural
+
+#class add animal
+    > aardvark/aardvarks
+#class remove animal
+
+
+#class add test
+    > hexagon/hexagons
+#class remove test

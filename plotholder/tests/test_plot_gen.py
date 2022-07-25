@@ -1,4 +1,4 @@
-import os
+from os import path
 
 from PIL import Image, ImageChops
 
@@ -6,8 +6,8 @@ from plotholder.src.plot_gen import bar_chart, pie_chart
 
 
 def relative_path_to_full_path(rel_path: str) -> str:
-    current_dir = os.path.dirname(os.path.realpath(__file__))
-    return os.path.join(current_dir, rel_path)
+    current_dir = path.dirname(path.realpath(__file__))
+    return path.join(current_dir, rel_path)
 
 
 def test_bar():
