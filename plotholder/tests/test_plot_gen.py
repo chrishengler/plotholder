@@ -18,6 +18,7 @@ def test_bar():
     # img.save('./resources/bar_chart.png')
     assert ImageChops.difference(img, target).getbbox() is None
 
+
 def test_pie_with_autopct():
     amounts = [1, 2, 4, 8]
     labels = ["this", "is", "a", "pie"]
