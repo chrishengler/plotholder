@@ -11,6 +11,11 @@ def relative_path_to_full_path(rel_path: str) -> str:
 twaddle = Runner(relative_path_to_full_path("./dictionary"))
 
 
-def produce_title(category: str = None) -> str:
+def title_nouns_per_year(category: str = None) -> str:
     noun = f"<noun.plural-{category}>" if category else "<noun.plural>"
     return twaddle.run_sentence(f"number of {noun}")
+
+
+def title_nouns_per_capita(category: str = None) -> str:
+    noun = f"<noun.plural-{category}>" if category else "<noun.plural>"
+    return twaddle.run_sentence(f"{noun} per capita")
